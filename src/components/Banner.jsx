@@ -5,6 +5,7 @@ import bannerImg from '../assets/Banner.png'
 const BannerContainer = styled.section`
 width:100%;
 height: 111px;
+margin-bottom:20px;
 border-radius:10px;
 background-image: url(${bannerImg}),linear-gradient(#F6F6F6, #000000); 
 mix-blend-mode: overlay;
