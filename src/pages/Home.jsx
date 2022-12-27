@@ -4,23 +4,27 @@ import logements from "../data/logements.json"
 import styled from 'styled-components'
 
 const CardsContainer = styled.section`
-  
+  margin-bottom:20px;
+`
+const ContainerMain = styled.main`
+  width:90%;
+  margin:auto auto;
 `
 
 function Home() {
   return (
-    <div>
+    <ContainerMain>
       <Banner />
       <CardsContainer>
         {logements.map((logement, index) => (
           <Card
-            key={`${logement.id}`}
+            key={`${logement.id}-${index}`}
             picture={logement.cover}
             title={logement.title}
           />
         ))}
       </CardsContainer>
-    </div>
+    </ContainerMain>
   )
 }
 

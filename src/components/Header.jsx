@@ -5,10 +5,12 @@ import '../styles/base.css'
 import colors from '../utils/colors'
 
 const HeaderContainer = styled.header`
-  width:100%;
+  width:90%;
+  margin:auto auto;
   display:flex;
   flex-direction:row;
   justify-content:space-between;
+  margin-bottom:20px;
 `
 const LogoContainer = styled.div`
   width:42%;
@@ -35,8 +37,8 @@ function Header() {
         <img src={Logo} alt='logo de kasa' />
       </LogoContainer>
       <NavContainer>
-        <Link>Acceuil</Link>
-        <Link>A Propos</Link>
+        <Link to="/">Acceuil</Link>
+        <Link to="/About">A Propos</Link>
       </NavContainer>
     </HeaderContainer>
   )

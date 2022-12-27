@@ -10,15 +10,23 @@ const DivCard = styled.div`
 const ImgCard = styled.img`
   width:100%;
   height:255px;
+  margin-bottom:20px;
   border-radius:10px;
   object-fit:cover;
+  filter: brightness(80%);
   z-index:99;
 `
 
 const PCard = styled.p`
-  display:block;
+  display: block;
+  width: 80%;
+  margin: auto auto;
   position:absolute;
   z-index:100;
+  color:white;
+  margin-top: -80px;
+  margin-left:20px;
+  font-size: 1.2rem;
 `
 
 function Card({ id, title, picture }) {
