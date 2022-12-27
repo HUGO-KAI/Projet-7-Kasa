@@ -1,0 +1,27 @@
+.HeaderContainer {
+  width: 90%;
+  margin: auto auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.HeaderContainer .LogoContainer {
+  width: 42%;
+}
+.HeaderContainer .NavContainer {
+  width: 42%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeaderContainer .NavContainer a {
+  font-weight: 500;
+  color: #FF6060;
+}
+.HeaderContainer .NavContainer a:hover,
+.HeaderContainer .NavContainer a active {
+  border-bottom: 1px solid;
+}
+
+/*# sourceMappingURL=Header.css.map */

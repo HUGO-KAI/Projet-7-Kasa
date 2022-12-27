@@ -1,26 +1,16 @@
-import Banner from "../components/Banner"
-import Card from "../components/Card"
-import logements from "../data/logements.json"
+import Banner from "../../components/Banner/Banner"
+import Card from "../../components/Card"
+import logements from "../../data/logements.json"
 import styled from 'styled-components'
+import './Home.scss'
 
 const CardsContainer = styled.section`
   margin-bottom:20px;
 `
-const ContainerMain = styled.main`
-  width:90%;
-  margin:auto auto;
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      
-        width:89%;
-        font-size: 16px;
-      
-    }
-  }
-`
 
 function Home() {
   return (
-    <ContainerMain>
+    <main className="ContainerMain">
       <Banner />
       <CardsContainer>
         {logements.map((logement, index) => (
@@ -31,7 +21,7 @@ function Home() {
           />
         ))}
       </CardsContainer>
-    </ContainerMain>
+    </main>
   )
 }
 

@@ -2,8 +2,8 @@ import React from 'react'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components'
-import Header from '../src/components/Header'
-import Home from './pages/Home'
+import Header from './components/Header/Header'
+import Home from './pages/Home/Home'
 import About from './pages/About'
 import Footer from './components/Footer'
 

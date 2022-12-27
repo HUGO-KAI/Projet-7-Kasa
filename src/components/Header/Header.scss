@@ -1,0 +1,27 @@
+@import '../../utils/colors.scss';
+
+.HeaderContainer{
+    width:90%;
+    margin:auto auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-bottom:20px;
+    .LogoContainer{
+        width:42%;
+    }
+    .NavContainer{
+        width:42%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            font-weight: 500;
+            color:$color-primaire;
+            &:hover,
+            active{
+            border-bottom: 1px solid;
+            }
+        }    
+    }
+}
