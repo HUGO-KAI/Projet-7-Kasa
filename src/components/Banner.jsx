@@ -6,20 +6,30 @@ const BannerContainer = styled.section`
   width:100%;
   height: 111px;
   margin-bottom:20px;
-  border-radius:10px;
-  background-image: url(${bannerImg}),linear-gradient(#F6F6F6, #000000); 
-  
-  background-size: cover;
   postion:relative;
+  img{
+    filter:brightness(75%);
+    border-radius:10px;
+  }
   h2{
+    width:60%;
+    color:#FFFFFF;
     position:absolute;
+    margin-top:-85px;
+    margin-left:16px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 `
 
 function Banner() {
     return (
       <BannerContainer>
-        <h2 style={{color:'white'}}> Chez vous, partout et ailleurs</h2>
+        <img src={bannerImg} alt='' />
+        <h2 > Chez vous, <br /> partout et ailleurs</h2>
       </BannerContainer>
     )
   }

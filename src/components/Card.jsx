@@ -13,7 +13,7 @@ const ImgCard = styled.img`
   margin-bottom:20px;
   border-radius:10px;
   object-fit:cover;
-  filter: brightness(80%);
+  filter: brightness(75%);
   z-index:99;
 `
 
