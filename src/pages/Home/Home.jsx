@@ -1,11 +1,19 @@
 import Banner from "../../components/Banner/Banner"
-import Card from "../../components/Card"
+import Card from "../../components/Card/Card"
 import logements from "../../data/logements.json"
 import styled from 'styled-components'
 import './Home.scss'
 
 const CardsContainer = styled.section`
-  margin-bottom:20px;
+  width:86%;
+  margin:auto auto;
+  @media screen and (min-width:1280px) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: #F6F6F6;
+    border-radius: 25px;
+    padding: 50px 0px 20px 0px;
+  }
 `
 
 function Home() {

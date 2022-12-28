@@ -1,14 +1,24 @@
 .BannerContainer{
-    width:100%;
+    width:90%;
     height: 111px;
+    margin:auto auto;
     margin-bottom:20px;
     position:relative;
+    object-fit: cover;
+    @media screen and (min-width:780px) {
+      height: 223px;
+      width:86%;
+    }
     img{
+      height: 100%;
       filter:brightness(75%);
       border-radius:10px;
+      @media screen and (min-width:780px) {
+        border-radius: 25px;
+      }
     }
     h2{
-    width:60%;
+    width:70%;
     color:#FFFFFF;
     position:absolute;
     margin-top:-85px;

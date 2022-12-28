@@ -3,18 +3,32 @@
 .HeaderContainer{
     width:90%;
     margin:auto auto;
+    
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    margin-bottom:20px;
+    padding-bottom:20px;
+    @media screen and (min-width:780px) {
+        width: 86%;
+        padding-top: 40px;
+        padding-bottom:40px;
+    }
     .LogoContainer{
         width:42%;
+        @media screen and (min-width:780px) {
+            width: 16.5%;
+            align-items: left;
+        }
     }
     .NavContainer{
         width:42%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        text-align: right;
+        @media screen and (min-width:780px) {
+            width: 24%;
+        }
         a{
             font-weight: 500;
             color:$color-primaire;

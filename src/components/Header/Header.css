@@ -4,16 +4,35 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 780px) {
+  .HeaderContainer {
+    width: 86%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 .HeaderContainer .LogoContainer {
   width: 42%;
+}
+@media screen and (min-width: 780px) {
+  .HeaderContainer .LogoContainer {
+    width: 16.5%;
+    align-items: left;
+  }
 }
 .HeaderContainer .NavContainer {
   width: 42%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: right;
+}
+@media screen and (min-width: 780px) {
+  .HeaderContainer .NavContainer {
+    width: 24%;
+  }
 }
 .HeaderContainer .NavContainer a {
   font-weight: 500;

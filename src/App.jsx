@@ -10,9 +10,11 @@ import Footer from './components/Footer'
 const GlobalStyle = createGlobalStyle`
     #root {
       width:100%;
-      margin:20px auto;
+      
       font-family: Montserrat, sans-serif;
-      font-size:16px;
+      @media screen and (min-width:780px) {
+        font-size:24px;
+    }
     }
     a{
       text-decoration: none;
