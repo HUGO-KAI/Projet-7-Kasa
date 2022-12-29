@@ -5,9 +5,10 @@ import styled from 'styled-components'
 import './Home.scss'
 
 const CardsContainer = styled.section`
-  width:86%;
+  width:90%;
   margin:auto auto;
   @media screen and (min-width:1280px) {
+    width:86%;
     display: grid;
     grid-template-columns: auto auto auto;
     background: #F6F6F6;
