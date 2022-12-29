@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Footer from './components/Footer/Footer'
+import Error from './pages/Error/Error'
 
 const GlobalStyle = createGlobalStyle`
     #root {
@@ -14,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
       font-family: Montserrat, sans-serif;
       @media screen and (min-width:780px) {
         font-size:24px;
-    }
+      }
     }
     a{
       text-decoration: none;
@@ -30,6 +31,7 @@ function App() {
             <Routes>
               <Route index element={<Home />} />
               <Route path="about" element={<About />} />
+              <Route path="*" element={<Error />} />
             </Routes>
           <Footer />
         </Router>

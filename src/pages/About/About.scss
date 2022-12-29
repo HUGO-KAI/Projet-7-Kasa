@@ -1,10 +1,28 @@
+
 .about_banner{
-    height:220px;
+    width: 90%;
+    margin: auto auto;
+    height:223px;
+    background:no-repeat url(../../assets/aboutBanner2.png);
+    background-size: cover;
+    border-radius: 10px;
+    @media screen and (min-width:780px) {
+        width: 86%;
+        margin:auto auto;
+    }
     img{
-        height: 220px;
+        height:223px;
+        width: 100%;
+        @media screen and (min-width:1280px) {
+            display: none;
+            object-position: 0px -100px;
+        }
     }
 }
 .about_collapse{
     width: 90%;
     margin:20px auto;
+    @media screen and (min-width:778px) {
+        width: 71.5%;
+    }
 }

@@ -23,7 +23,7 @@ const CardsContainer = styled.section`
 function Home() {
   return (
     <main className="ContainerMain">
-      <div>
+      <div className="Home_banner">
         <Banner image={bannerImg} text={slogan} />
       </div>
       <CardsContainer>

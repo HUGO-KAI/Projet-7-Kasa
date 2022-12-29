@@ -1,8 +1,36 @@
 .about_banner {
-  height: 220px;
+  width: 90%;
+  margin: auto auto;
+  height: 223px;
+  background: no-repeat url(../../assets/aboutBanner2.png);
+  background-size: cover;
+  border-radius: 10px;
+}
+@media screen and (min-width: 780px) {
+  .about_banner {
+    width: 86%;
+    margin: auto auto;
+  }
 }
 .about_banner img {
-  height: 220px;
+  height: 223px;
+  width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .about_banner img {
+    display: none;
+    object-position: 0px -100px;
+  }
+}
+
+.about_collapse {
+  width: 90%;
+  margin: 20px auto;
+}
+@media screen and (min-width: 778px) {
+  .about_collapse {
+    width: 71.5%;
+  }
 }
 
 /*# sourceMappingURL=About.css.map */

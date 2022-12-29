@@ -1,0 +1,43 @@
+@import '../../utils/colors.scss';
+
+.Error404{
+    width: 54%;
+    margin: auto auto;
+    margin-top: 10rem;
+    font-size: 6rem;
+    font-weight: 700;
+    color: $color-primaire;
+    text-align: center;
+}
+.Error_message{
+    width: 70%;
+    margin: auto;
+    font-weight: 500;
+    font-size: 1.13rem;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $color-primaire;
+    @media screen and (min-width:780px){
+        width:fit-content;
+        flex-direction: row;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+   
+}
+.Error_return{
+    color: $color-primaire;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: underline;
+    display: block;
+    width: fit-content;
+    margin: auto auto;
+    margin-top: 10rem;
+    @media screen and (min-width:780px){
+        font-size: 1.15rem;
+    }
+}

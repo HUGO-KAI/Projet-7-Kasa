@@ -11,16 +11,16 @@ function About() {
           <Banner image={bannerImg} />
         </div>
         <section className="about_collapse" >
-          <Collapse title='Fiabilité' content={textData.fiability} className="about_collapse"/>
+          <Collapse title='Fiabilité' content={textData.fiability} />
         </section>
         <section className="about_collapse">
-          <Collapse title='Respect' content={textData.respect} className="about_collapse"/>
+          <Collapse title='Respect' content={textData.respect} />
         </section>
         <section className="about_collapse">
-          <Collapse title='Service' content={textData.service} className="about_collapse"/>
+          <Collapse title='Service' content={textData.service} />
         </section>  
         <section className="about_collapse">
-          <Collapse title='Sécurité' content={textData.security} className="about_collapse"/>
+          <Collapse title='Sécurité' content={textData.security} />
         </section>  
       </main>
     )
