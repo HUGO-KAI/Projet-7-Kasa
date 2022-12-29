@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components'
 import Header from './components/Header/Header'
 import Home from './pages/Home/Home'
+import Logement from './pages/Logement/Logement'
 import About from './pages/About/About'
 import Footer from './components/Footer/Footer'
 import Error from './pages/Error/Error'
@@ -30,6 +31,7 @@ function App() {
           <Header />
             <Routes>
               <Route index element={<Home />} />
+              <Route path="logements/:logementId" element={<Logement />} />
               <Route path="about" element={<About />} />
               <Route path="*" element={<Error />} />
             </Routes>

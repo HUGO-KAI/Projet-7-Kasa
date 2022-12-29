@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Banner from "../../components/Banner/Banner"
 import Card from "../../components/Card/Card"
 import logements from "../../data/logements.json"
@@ -28,11 +29,13 @@ function Home() {
       </div>
       <CardsContainer>
         {logements.map((logement, index) => (
-          <Card
-            key={`${logement.id}-${index}`}
-            picture={logement.cover}
-            title={logement.title}
-          />
+          <Link key={logement.id} to={`/logements/${logement.id}`}>
+            <Card
+              key={`${logement.id}-${index}`}
+              picture={logement.cover}
+              title={logement.title}
+            />
+          </Link>
         ))}
       </CardsContainer>
     </main>

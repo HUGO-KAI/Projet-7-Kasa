@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import {DivCard,ImgCard,PCard } from './Styled'
 
+
 function Card({ id, title, picture }) {
     return (
       <DivCard>
