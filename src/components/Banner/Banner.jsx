@@ -9,7 +9,7 @@ function Banner() {
     return (
       <section className="BannerContainer">
         <img src={bannerImg} alt='' />
-        <h2 > Chez vous, <span>partout et ailleurs</span></h2>
+        <h2 > Chez vous, <div>partout et ailleurs</div></h2>
       </section>
     )
   }
