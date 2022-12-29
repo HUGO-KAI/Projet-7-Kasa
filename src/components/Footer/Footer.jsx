@@ -1,8 +1,9 @@
 import styled from 'styled-components'
-import Logo from '../assets/LOGO.png'
+import Logo from '../../assets/LOGO.png'
 
 const ContainerFooter = styled.footer`
     position: relative;
+    margin-top:20px;
     width: 100%;
     height: 209px;
     background: #000000;

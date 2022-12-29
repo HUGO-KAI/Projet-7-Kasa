@@ -3,6 +3,9 @@ import Card from "../../components/Card/Card"
 import logements from "../../data/logements.json"
 import styled from 'styled-components'
 import './Home.scss'
+import bannerImg from '../../assets/D-banner.png'
+import textData from "../../data/textData";
+const slogan = textData.slogan;
 
 const CardsContainer = styled.section`
   width:90%;
@@ -20,7 +23,9 @@ const CardsContainer = styled.section`
 function Home() {
   return (
     <main className="ContainerMain">
-      <Banner />
+      <div>
+        <Banner image={bannerImg} text={slogan} />
+      </div>
       <CardsContainer>
         {logements.map((logement, index) => (
           <Card

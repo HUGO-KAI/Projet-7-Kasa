@@ -1,17 +1,13 @@
-
-import '../../styles/base.css'
-import bannerImg from '../../assets/D-banner.png'
+import React from "react";
 import './Banner.scss'
 
+const Banner = ({ image, text }) => {
+  return (
+    <div className="BannerContainer">
+      <img src={image} alt="" />
+      {text ? <h1>{text}</h1> : null}
+    </div>
+  );
+};
 
-
-function Banner() {
-    return (
-      <section className="BannerContainer">
-        <img src={bannerImg} alt='' />
-        <h2 > Chez vous, <div>partout et ailleurs</div></h2>
-      </section>
-    )
-  }
-  
-  export default Banner
+export default Banner;

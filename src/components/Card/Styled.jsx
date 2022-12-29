@@ -4,6 +4,7 @@ const DivCard = styled.div`
     width:100%;
     border-radius:10px;
     position:relative;
+    padding:0% 0% 20px 0% ;
     @media screen and (min-width:780px) {
         width: 84%;
         height:340px;
@@ -20,7 +21,7 @@ const ImgCard = styled.img`
 `
 const PCard = styled.p`
   display: block;
-  width: 80%;
+  width: 70%;
   margin: auto auto;
   position:absolute;
   z-index:100;
