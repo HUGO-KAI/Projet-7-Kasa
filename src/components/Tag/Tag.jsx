@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import './Tag.scss'
 
 function Tag({key, tag}) {
     return (

@@ -11,19 +11,22 @@ const Logement = () => {
     logement;
     return (
         <main className='logement_main'>
-            <Slideshow pictures={pictures}/>
+            <div className='slide_container'>
+                <Slideshow pictures={pictures}/>
+            </div>
             <div className='container_title'>
                 <h1>{title}</h1>
                 <p>{location}</p>
-                    {tags.map((tag,index) => {
+                <div className='tags_container'>
+                {tags.map((tag,index) => {
                         return(
-                            <div className='tags_container' key = {index+100}>
-                    <Tag 
-                    tag = {tag}
-                    /></div>
+                            <div key = {index+100} >
+                                <Tag tag = {tag}/>
+                            </div>
                         )
-                })
-                    }
+                })}
+                </div>
+                    
             </div>
         </main>
     )

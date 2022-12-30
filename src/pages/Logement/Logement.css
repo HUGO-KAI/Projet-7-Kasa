@@ -1,11 +1,15 @@
 .logement_main {
   width: 90%;
+  min-height: 90vh;
   margin: auto;
   margin-bottom: 20px;
 }
 
+.slide_container {
+  height: 255px;
+}
+
 .container_title {
-  height: 46px;
   width: 100%;
   color: #FF6060;
 }
@@ -17,14 +21,19 @@
   letter-spacing: 0em;
   text-align: left;
 }
-.container_title p {
+.container_title > p {
   margin-top: 0px;
   font-size: 0.88rem;
 }
 .container_title .tags_container {
-  width: 50%;
-  height: 50px;
+  max-width: 100%;
   color: #FF6060;
+  display: flex;
+  flex-direction: row;
+}
+.container_title .tags_container > div {
+  width: 100%;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=Logement.css.map */

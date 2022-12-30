@@ -2,12 +2,17 @@
 
 .logement_main{
     width:90%;
+    min-height: 90vh;
     margin:auto;
     margin-bottom: 20px;
 }
 
+.slide_container{
+    height: 255px;
+}
+
 .container_title{
-    height: 46px;
+    
     width: 100%;
     color:$color-primaire;
     h1{
@@ -18,13 +23,18 @@
         letter-spacing: 0em;
         text-align: left;
     }
-    p{
+    >p{
         margin-top: 0px;
         font-size: 0.88rem;
     }
     .tags_container{
-        width: 50%;
-        height: 50px;
+        max-width: 100%;
         color:$color-primaire;
+        display: flex;
+        flex-direction: row;
+        >div{
+            width: 100%;
+            margin-right: 10px;
+        }
     }
 }
