@@ -1,0 +1,30 @@
+@import '../../utils/colors.scss';
+
+.logement_main{
+    width:90%;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+.container_title{
+    height: 46px;
+    width: 100%;
+    color:$color-primaire;
+    h1{
+        margin-top:15px;
+        margin-bottom: 5px;
+        font-size: 1.15rem;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    p{
+        margin-top: 0px;
+        font-size: 0.88rem;
+    }
+    .tags_container{
+        width: 50%;
+        height: 50px;
+        color:$color-primaire;
+    }
+}

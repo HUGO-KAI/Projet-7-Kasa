@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const DivCard = styled.div`
     width:100%;
+    height:255px;
     border-radius:10px;
     position:relative;
     padding:0% 0% 20px 0% ;
