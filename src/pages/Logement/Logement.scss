@@ -8,24 +8,30 @@
 }
 
 .slide_container{
-    height: 255px;
+
 }
 
 .container_title{
-    
     width: 100%;
+    
     color:$color-primaire;
     h1{
         margin-top:15px;
         margin-bottom: 5px;
-        font-size: 1.15rem;
+        font-size: 18px;
         font-weight: 500;
         letter-spacing: 0em;
         text-align: left;
+        @media  screen and (min-width:768px) {
+            font-size: 36px;
+        }
     }
     >p{
         margin-top: 0px;
-        font-size: 0.88rem;
+        font-size: 14px;
+        @media  screen and (min-width:768px) {
+            font-size: 18px;
+        }
     }
     .tags_container{
         max-width: 100%;
@@ -34,8 +40,58 @@
         flex-direction: row;
         >div{
             display:grid;
-    width: 100%;
+            width: 100%;
             margin-right: 10px;
         }
     }
+}
+.Rating_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.1rem;
+    .stars{
+        img{
+            padding-top: 10%;
+        }
+    }
+    .host_info{
+        display:flex;
+        flex-direction: row;
+        div{
+            min-width: 6rem;
+            line-height: 33px;
+            color:$color-primaire;
+            font-size: 0.75rem;
+            margin-right: 0.7rem;
+            text-align: right;
+            overflow: hidden;
+        }
+        img{
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+        }
+    }
+
+}
+.collapse_container{
+    display: flex;
+    flex-direction: column;
+    >div{
+        margin-top: 26px;
+        @media screen and (min-width:768px) {
+           width: 45%;
+        }
+        p{
+            font-size: 1.13rem;
+        }
+    }
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+#logement_description{
+    font-size: 1.13rem;
 }

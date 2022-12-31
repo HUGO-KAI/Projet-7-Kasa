@@ -5,6 +5,9 @@
     margin: auto;
     border-radius: 10px;
     position: relative;
+    @media screen and (min-width:768px) {
+        height: 415px;
+    }
     .arrow_left{
         height: 19.8px;
         width: 11.5px;
@@ -14,6 +17,11 @@
         right: -21.58%;
         top: 48%;
         z-index: 999;
+        @media screen and (min-width:768px) {
+            height: 79.2px;
+            width: 46.7px;
+            top: 40%;
+        }
     }
     .arrow_right{
         height: 19.8px;
@@ -24,6 +32,11 @@
         top: 48%;
         z-index: 999;
         transform: rotate(180deg);
+        @media screen and (min-width:768px) {
+            height: 79.2px;
+            width: 46.7px;
+            top: 40%;
+        }
     }
     img{
         border-radius: 10px;
@@ -31,6 +44,9 @@
 		object-fit: cover;
 		user-select: none;
         z-index: 888;
+        @media screen and (min-width:768px) {
+            height: 415px;
+        }
     }
 }
 .hide-img {

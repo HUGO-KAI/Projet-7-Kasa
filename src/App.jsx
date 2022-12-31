@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
       width:100%;
       font-family: Montserrat, sans-serif;
       @media screen and (min-width:780px) {
-        font-size:24px;
+        
       }
     }
     a{

@@ -21,6 +21,7 @@ const ImgCard = styled.img`
   z-index:99;
 `
 const PCard = styled.p`
+  font-size:18px;
   display: block;
   width: 70%;
   margin: auto auto;
@@ -29,7 +30,6 @@ const PCard = styled.p`
   color:white;
   margin-top: -80px;
   margin-left:20px;
-  font-size: 1.2rem;
 `
 export{
     DivCard, 
