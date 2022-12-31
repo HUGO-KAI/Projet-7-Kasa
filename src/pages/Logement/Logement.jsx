@@ -3,6 +3,7 @@ import './Logement.scss'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import logements from "../../data/logements.json"
 import Tag from '../../components/Tag/Tag'
+import Rating from '../../components/Rating/Rating'
 
 const Logement = () => {
     let { logementId } = useParams();
@@ -26,7 +27,9 @@ const Logement = () => {
                         )
                 })}
                 </div>
-                    
+            </div>
+            <div>
+                <Rating ratings={rating}/>
             </div>
         </main>
     )
