@@ -11,7 +11,7 @@ const slogan = textData.slogan;
 const CardsContainer = styled.section`
   width:90%;
   margin:auto auto;
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width:768px) {
     width:86%;
     display: grid;
     grid-template-columns: auto auto auto;

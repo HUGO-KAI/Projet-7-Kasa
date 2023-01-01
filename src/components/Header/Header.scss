@@ -9,7 +9,7 @@
     flex-direction:row;
     justify-content:space-between;
     padding-bottom:20px;
-    @media screen and (min-width:780px) {
+    @media screen and (min-width:768px) {
         font-size: 24px;
         width: 86%;
         padding-top: 20px;
@@ -17,26 +17,31 @@
     }
     .LogoContainer{
         width:42%;
-        @media screen and (min-width:780px) {
-            width: 16.5%;
+        @media screen and (min-width:768px) {
+            width: 17%;
             align-items: left;
         }
     }
     .NavContainer{
-        width:42%;
+        width:140px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-align: right;
         @media screen and (min-width:780px) {
-            width: 24%;
+            width: 25%;
         }
         a{
             font-weight: 500;
             color:$color-primaire;
             &:hover,
-            active{
+            :active{
             border-bottom: 1px solid;
+            }
+            @media screen and (max-width:767px) {
+                &::first-line{
+                    text-transform: uppercase;
+                }
             }
         }    
     }

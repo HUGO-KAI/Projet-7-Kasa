@@ -8,6 +8,7 @@ const DivCard = styled.div`
     padding:0% 0% 20px 0% ;
     @media screen and (min-width:780px) {
         width: 84%;
+        max-width:340px;
         height:340px;
         padding:0px 8% 8% 8% ;
     }

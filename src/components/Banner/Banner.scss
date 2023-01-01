@@ -30,15 +30,12 @@
       line-height: 24px;
       letter-spacing: 0em;
       text-align: left;
-      @media screen and (min-width:780px) {
+      @media screen and (min-width:768px) {
         display: flex;
         flex-direction: row;
         width: 80%;
-        left: 25.9%;
-        right: 25.14%;
-        top: 15.32%;
-        bottom: 69.04%;
-        font-size: 48px;
+        
+        font-size: 3rem;
         line-height: 142.6%;
       }
     }

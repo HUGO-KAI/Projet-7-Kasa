@@ -8,7 +8,7 @@
   justify-content: space-between;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .HeaderContainer {
     font-size: 24px;
     width: 86%;
@@ -19,14 +19,14 @@
 .HeaderContainer .LogoContainer {
   width: 42%;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .HeaderContainer .LogoContainer {
-    width: 16.5%;
+    width: 17%;
     align-items: left;
   }
 }
 .HeaderContainer .NavContainer {
-  width: 42%;
+  width: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@
 }
 @media screen and (min-width: 780px) {
   .HeaderContainer .NavContainer {
-    width: 24%;
+    width: 25%;
   }
 }
 .HeaderContainer .NavContainer a {
@@ -42,8 +42,13 @@
   color: #FF6060;
 }
 .HeaderContainer .NavContainer a:hover,
-.HeaderContainer .NavContainer a active {
+.HeaderContainer .NavContainer a :active {
   border-bottom: 1px solid;
+}
+@media screen and (max-width: 767px) {
+  .HeaderContainer .NavContainer a::first-line {
+    text-transform: uppercase;
+  }
 }
 
 /*# sourceMappingURL=Header.css.map */

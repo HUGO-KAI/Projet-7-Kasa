@@ -4,7 +4,7 @@ import './Collapse.scss'
 import arrow from '../../assets/arrow_down.png'
 
 const Collapse = ({title, content}) => {
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(false)
 	return isOpen ? (
 		<div className="collapse">
 			<div onClick={() => setIsOpen(false)} className = "collapse_bar" >
