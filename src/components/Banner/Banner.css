@@ -4,42 +4,36 @@
   margin: auto auto;
   margin-bottom: 20px;
   position: relative;
+  background-image: linear-gradient(rgba(55, 55, 56, 0.4), rgba(55, 55, 56, 0.4)), url("../../assets/Banner.png");
+  background-size: cover;
+  border-radius: 10px;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1080px) {
   .BannerContainer {
     height: 223px;
     width: 100%;
-  }
-}
-.BannerContainer img {
-  object-fit: cover;
-  height: 100%;
-  filter: brightness(75%);
-  border-radius: 10px;
-}
-@media screen and (min-width: 780px) {
-  .BannerContainer img {
-    border-radius: 25px;
+    background-image: linear-gradient(rgba(55, 55, 56, 0.4), rgba(55, 55, 56, 0.4)), url("../../assets/D-banner.png");
   }
 }
 .BannerContainer h1 {
   color: #FFFFFF;
   position: absolute;
-  left: 9.6%;
-  right: 32.53%;
-  top: 20.04%;
-  bottom: 80.05%;
+  top: 18%;
+  padding-left: 20px;
+  width: 217px;
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1080px) {
   .BannerContainer h1 {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+    top: 34%;
+    margin: auto auto;
     font-size: 3rem;
     line-height: 142.6%;
   }
