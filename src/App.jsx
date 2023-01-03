@@ -10,13 +10,11 @@ import Error from './pages/Error/Error'
 
 const GlobalStyle = createGlobalStyle`
     #root {
+      min-width:375px;
       max-width:1440px;
       margin:auto auto;
       width:100%;
       font-family: Montserrat, sans-serif;
-      @media screen and (min-width:780px) {
-        
-      }
     }
     a{
       text-decoration: none;

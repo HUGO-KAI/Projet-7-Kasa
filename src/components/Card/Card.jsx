@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types'
-import {DivCard,ImgCard,PCard } from './Styled'
-
+import cardSyles from './Card.module.scss'
+import { Link } from 'react-router-dom'
 
 function Card({ id, title, picture }) {
     return (
-      <DivCard>
-        <ImgCard src={picture} alt="logement" />
-        <PCard>{title}</PCard>
-      </DivCard>
+      <Link className={cardSyles.linkCard} to={`/logements/${id}`} >
+        <img className={cardSyles.ImgCard} src={picture} alt="logement" />
+        <p className={cardSyles.PCard}>{title}</p>
+      </Link>
     )
   }
 

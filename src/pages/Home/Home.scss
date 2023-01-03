@@ -8,10 +8,34 @@
     border-radius: 10px;
     background-image: linear-gradient(rgba(55, 55, 56, 0.4), rgba(55, 55, 56, 0.4)),
                       url("../../assets/Banner.png");
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1080px)  {
         width: 86%;
         background-image: linear-gradient(rgba(55, 55, 56, 0.4), rgba(55, 55, 56, 0.4)),
                         url("../../assets/D-banner.png");
         border-radius: 25px;
     }
+}
+
+.CardsContainer{
+    width:90%;
+    margin:auto auto;
+    @media screen and (min-width:768px) and (max-width:1080px){
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        background: #F6F6F6;
+        border-radius: 25px;
+        justify-items: center;
+        padding: 50px 0px 20px 0px;
+    }
+    @media screen and (min-width:1080px) {
+        width:86%;
+        display: grid;
+        grid-template-columns: (auto auto auto);
+        background: #F6F6F6;
+        border-radius: 25px;
+        padding: 50px 0px 20px 0px;
+    }
+}
+.Card_link{
+    height: 255px;
 }

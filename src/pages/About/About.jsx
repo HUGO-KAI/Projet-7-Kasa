@@ -1,6 +1,5 @@
 import Banner from "../../components/Banner/Banner"
 import Collapse from "../../components/Collapse/Collapse"
-import bannerImg from '../../assets/aboutBanner2.png'
 import './About.scss'
 import textData from "../../data/textData";
 

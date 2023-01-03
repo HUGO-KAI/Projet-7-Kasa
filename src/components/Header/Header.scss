@@ -9,21 +9,26 @@
     flex-direction:row;
     justify-content:space-between;
     padding-bottom:20px;
+    @media screen and (min-width:868px) and (max-width:1180px){
+        font-size: 18px;
+    }
+    @media screen and (min-width:1180px) {
+        font-size: 1.5rem;
+    }
     @media screen and (min-width:1080px) {
-        font-size: 24px;
         width: 86%;
         padding-top: 20px;
         padding-bottom:40px;
     }
     .LogoContainer{
-        width:42%;
-        @media screen and (min-width:1080px) {
+        width:145px;
+        @media screen and (min-width:768px) {
             width: 17%;
             align-items: left;
         }
     }
     .NavContainer{
-        width:140px;
+        min-width:140px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -38,7 +43,7 @@
             :active{
             border-bottom: 1px solid;
             }
-            @media screen and (max-width:1080px) {
+            @media screen and (max-width:768px) {
                 &::first-line{
                     text-transform: uppercase;
                 }

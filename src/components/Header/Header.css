@@ -8,25 +8,34 @@
   justify-content: space-between;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 868px) and (max-width: 1180px) {
+  .HeaderContainer {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .HeaderContainer {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (min-width: 1080px) {
   .HeaderContainer {
-    font-size: 24px;
     width: 86%;
     padding-top: 20px;
     padding-bottom: 40px;
   }
 }
 .HeaderContainer .LogoContainer {
-  width: 42%;
+  width: 145px;
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .HeaderContainer .LogoContainer {
     width: 17%;
     align-items: left;
   }
 }
 .HeaderContainer .NavContainer {
-  width: 140px;
+  min-width: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +54,7 @@
 .HeaderContainer .NavContainer a :active {
   border-bottom: 1px solid;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
   .HeaderContainer .NavContainer a::first-line {
     text-transform: uppercase;
   }

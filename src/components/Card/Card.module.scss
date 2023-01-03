@@ -1,0 +1,48 @@
+.linkCard{
+    display: block;
+    height:255px;
+    border-radius:10px;
+    position:relative;
+    margin: auto auto;
+    margin-bottom:  20px;
+    @media screen and (min-width:768px) and (max-width:1079px) {
+        min-width: 340px;
+        max-width:90%;
+        height:340px;
+    }
+    @media screen and (min-width:1080px) {
+        width: 84%;
+        max-width:340px;
+        height:340px;
+        margin:0px 8% 8% 8% ;
+    }
+} 
+
+.ImgCard {
+    max-width:100%;
+    height:100%;
+    border-radius:10px;
+    object-fit:cover;
+    filter: brightness(75%);
+    z-index:99;
+    @media screen and (min-width:768px){
+        max-width:400px;
+    }
+}
+ 
+.PCard {
+    font-size:18px;
+    display: block;
+    width: 70%;
+    margin: auto auto;
+    position:absolute;
+    z-index:100;
+    color:white;
+    margin-top: -80px;
+    margin-left:20px;
+    @media screen and (min-width:768px) {
+        
+    }
+}
+
+

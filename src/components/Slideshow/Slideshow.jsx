@@ -20,8 +20,6 @@ class Slideshow extends React.Component {
         return (
             <div className="carousel">
                 {this.props.pictures.map((picture, index) => {
-                    const currentSlide = this.state.currentSlide;
-                    const length = this.props.pictures.length;
                         return (
                             <React.Fragment key={index}>
                                 <img
