@@ -1,3 +1,4 @@
+import React from 'react'
 import {useParams} from 'react-router-dom';
 import './Logement.scss'
 import Slideshow from '../../components/Slideshow/Slideshow'
@@ -5,11 +6,12 @@ import logements from "../../data/logements.json"
 import Tag from '../../components/Tag/Tag'
 import Rating from '../../components/Rating/Rating'
 import Collapse from '../../components/Collapse/Collapse'
-import React from 'react';
+import Error from '../Error/Error'
 
 const Logement = () => {
     let { logementId } = useParams();
     const logement = logements.find((logement) => logement.id === logementId);
+    if (!logement) return <Error />;
     const { title, location, tags, rating, host, equipments, description, pictures } =
     logement;
     return (

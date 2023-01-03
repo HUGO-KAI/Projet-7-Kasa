@@ -28,7 +28,7 @@ function App() {
         <Router>
           <Header />
             <Routes>
-              <Route index element={<Home />} />
+              <Route path="/home" element={<Home />} />
               <Route path="logements/:logementId" element={<Logement />} />
               <Route path="about" element={<About />} />
               <Route path="*" element={<Error />} />
