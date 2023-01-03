@@ -4,15 +4,11 @@
   margin: auto auto;
   margin-bottom: 20px;
   position: relative;
-  background-image: linear-gradient(rgba(55, 55, 56, 0.4), rgba(55, 55, 56, 0.4)), url("../../assets/Banner.png");
-  background-size: cover;
-  border-radius: 10px;
 }
 @media screen and (min-width: 1080px) {
   .BannerContainer {
     height: 223px;
     width: 100%;
-    background-image: linear-gradient(rgba(55, 55, 56, 0.4), rgba(55, 55, 56, 0.4)), url("../../assets/D-banner.png");
   }
 }
 .BannerContainer h1 {

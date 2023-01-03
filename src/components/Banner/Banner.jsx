@@ -1,9 +1,9 @@
 import React from "react";
 import './Banner.scss'
 
-const Banner = ({ image, text }) => {
+const Banner = ({text}) => {
   return (
-    <div className="BannerContainer">
+    <div className="BannerContainer" >
       {text ? <h1>{text}</h1> : null}
     </div>
   );

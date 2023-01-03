@@ -5,6 +5,12 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .info-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .container_title {
   width: 100%;
   color: #FF6060;
@@ -20,6 +26,7 @@
 @media screen and (min-width: 768px) {
   .container_title h1 {
     font-size: 36px;
+    margin-top: 30px;
   }
 }
 .container_title > p {
@@ -36,10 +43,10 @@
   color: #FF6060;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .container_title .tags_container > div {
   display: grid;
-  width: 100%;
   margin-right: 10px;
 }
 
@@ -49,6 +56,12 @@
   justify-content: space-between;
   margin-top: 1.1rem;
 }
+@media screen and (min-width: 768px) {
+  .Rating_container {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+}
 .Rating_container .stars img {
   padding-top: 10%;
 }
@@ -57,18 +70,31 @@
   flex-direction: row;
 }
 .Rating_container .host_info div {
-  min-width: 6rem;
+  min-width: 93px;
   line-height: 33px;
   color: #FF6060;
-  font-size: 0.75rem;
+  font-size: 12px;
   margin-right: 0.7rem;
   text-align: right;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .Rating_container .host_info div {
+    font-size: 18px;
+    height: 64px;
+    line-height: 64px;
+  }
 }
 .Rating_container .host_info img {
   height: 32px;
   width: 32px;
   border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .Rating_container .host_info img {
+    height: 64px;
+    width: 64px;
+  }
 }
 
 .collapse_container {
@@ -86,7 +112,6 @@
 .collapse_container > div p {
   margin: 5px 0px;
   line-height: 142.6%;
-  font-size: 1.13rem;
 }
 @media screen and (min-width: 768px) {
   .collapse_container {
@@ -97,6 +122,10 @@
 
 #logement_description {
   font-size: 1.13rem;
+}
+
+#logement_equipments {
+  padding-bottom: 1%;
 }
 
 /*# sourceMappingURL=Logement.css.map */

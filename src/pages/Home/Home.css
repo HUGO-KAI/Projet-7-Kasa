@@ -2,4 +2,19 @@
   width: 100%;
 }
 
+.Home_banner {
+  width: 90%;
+  margin: auto auto;
+  background-size: cover;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(55, 55, 56, 0.4), rgba(55, 55, 56, 0.4)), url("../../assets/Banner.png");
+}
+@media screen and (min-width: 768px) {
+  .Home_banner {
+    width: 86%;
+    background-image: linear-gradient(rgba(55, 55, 56, 0.4), rgba(55, 55, 56, 0.4)), url("../../assets/D-banner.png");
+    border-radius: 25px;
+  }
+}
+
 /*# sourceMappingURL=Home.css.map */

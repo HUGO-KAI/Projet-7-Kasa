@@ -16,7 +16,7 @@ const Logement = () => {
             <div className='slide_container'>
                 <Slideshow pictures={pictures}/>
             </div>
-            <div>
+            <div className='info-header'>
                 <div className='container_title'>
                     <h1>{title}</h1>
                     <p>{location}</p>
@@ -33,14 +33,14 @@ const Logement = () => {
                 <div className='Rating_container'>
                     <Rating ratings={rating}/>
                     <div className='host_info'>
-                        <div>{host.name}</div>
+                        <div><span>{host.name}</span></div>
                         <img src ={host.picture} alt ='host'></img>
                     </div>
                 </div>
             </div>
             <div className='collapse_container'>
                 <Collapse title ='Description' content ={description} id='logement_description'/>
-                <Collapse title ='Equipments' id='logement_description' content ={equipments.map((equipment,index) => (
+                <Collapse title ='Equipments'  content ={equipments.map((equipment,index) => (
                     <p key={index} >{equipment}</p>
                 )
                 )} />

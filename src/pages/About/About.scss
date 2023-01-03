@@ -3,14 +3,18 @@
     width: 90%;
     margin: auto auto;
     height:223px;
-    background:no-repeat url(../../assets/aboutBanner2.png);
+    background-image:   linear-gradient(rgba(55, 55, 56, 0.2), rgba(55, 55, 56, 0.2)),
+                        url(../../assets/aboutBanner.png);
     background-size: cover;
     border-radius: 10px;
     @media screen and (min-width:780px) {
         width: 86%;
         margin:auto auto;
+        background-image:   linear-gradient(rgba(55, 55, 56, 0.2), rgba(55, 55, 56, 0.2)),
+                            url(../../assets/aboutBanner2.png);
     }
     img{
+        visibility: hidden;
         height:223px;
         width: 100%;
         @media screen and (min-width:1280px) {

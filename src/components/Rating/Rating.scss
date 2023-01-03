@@ -1,3 +1,6 @@
 .star{
-   width:0.95rem;
+   width:15px;
+   @media screen and (min-width:768px) {
+      width:30px;
+   }
 }
