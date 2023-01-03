@@ -16,11 +16,11 @@
 }
 .tag_container p {
   font-size: 10px;
-  box-sizing: border-box;
   width: auto;
-  margin: auto;
+  margin: auto auto;
+  margin-left: 5px;
+  margin-right: 5px;
   text-align: center;
-  padding: 4px 10% 4px 10%;
   white-space: nowrap;
 }
 @media screen and (min-width: 768px) {

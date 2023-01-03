@@ -5,6 +5,7 @@ import logements from "../../data/logements.json"
 import Tag from '../../components/Tag/Tag'
 import Rating from '../../components/Rating/Rating'
 import Collapse from '../../components/Collapse/Collapse'
+import React from 'react';
 
 const Logement = () => {
     let { logementId } = useParams();
@@ -23,9 +24,9 @@ const Logement = () => {
                     <div className='tags_container'>
                     {tags.map((tag,index) => {
                             return(
-                                <div key = {index+100} >
+                                <React.Fragment key = {index+100} >
                                     <Tag tag = {tag}/>
-                                </div>
+                                </React.Fragment>
                             )
                     })}
                     </div>

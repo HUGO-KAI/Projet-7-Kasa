@@ -60,6 +60,7 @@
   .Rating_container {
     flex-direction: column-reverse;
     align-items: flex-end;
+    justify-content: space-around;
   }
 }
 .Rating_container .stars img {
@@ -120,12 +121,10 @@
   }
 }
 
-#logement_description {
-  font-size: 1.13rem;
-}
-
-#logement_equipments {
-  padding-bottom: 1%;
+@media screen and (min-width: 768px) {
+  .collapse_content__container {
+    min-height: 249px;
+  }
 }
 
 /*# sourceMappingURL=Logement.css.map */
