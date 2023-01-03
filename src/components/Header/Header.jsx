@@ -7,11 +7,11 @@ import './Header.scss'
 function Header() {
   return (
     <header className="HeaderContainer">
-      <Link to="/home" className='LogoContainer'>
+      <Link to="/" className='LogoContainer'>
         <img src={Logo} alt='logo de kasa' />
       </Link>
       <nav className='NavContainer'>
-        <Link to="/home">Acceuil</Link>
+        <Link to="/">Acceuil</Link>
         <Link to="/About">A Propos</Link>
       </nav>
     </header>
