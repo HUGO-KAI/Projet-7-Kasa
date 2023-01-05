@@ -34,5 +34,9 @@
     width: 71.5%;
   }
 }
+.about_collapse .collapse_content__container {
+  min-height: 20px;
+  height: fit-content;
+}
 
 /*# sourceMappingURL=About.css.map */

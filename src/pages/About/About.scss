@@ -29,6 +29,9 @@
     @media screen and (min-width:778px) {
         width: 71.5%;
     }
-    
+    .collapse_content__container{
+        min-height: 20px;
+        height: fit-content;
+    }
 }
 
