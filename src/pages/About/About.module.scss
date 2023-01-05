@@ -35,16 +35,19 @@
     }
 }
 .about_collapse{
-    width: 90%;
+    width: 100%;
     margin:20px auto;
     @media screen and (min-width:768px) {
-        width: 71.5%;
+        width: 83%;
     }
-    .collapse_content__container{
-        @media screen and (min-width:768px) {
-            min-height: 20px;
-            height: fit-content;
+    .collapse{
+        .collapse_content__container{
+            @media screen and (min-width:768px) {
+                min-height: 20px;
+                height: fit-content;
+            }
         }
     }
+    
 }
 
