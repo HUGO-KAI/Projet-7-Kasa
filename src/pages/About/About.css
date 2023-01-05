@@ -35,10 +35,4 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .collapse_content__container {
-    min-height: fit-content;
-  }
-}
-
 /*# sourceMappingURL=About.css.map */

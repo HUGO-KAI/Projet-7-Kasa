@@ -122,7 +122,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .collapse_content__container {
+  .logement_collapse__content {
     min-height: 249px;
   }
 }

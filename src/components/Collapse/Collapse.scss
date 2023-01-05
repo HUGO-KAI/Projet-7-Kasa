@@ -73,7 +73,11 @@
     background-color: $color-secondaire;
     color: $color-primaire ;
     border-radius: 5px;
-    
+    min-height: 143px;
+    @media screen and (min-width:768px) {
+        border-radius: 10px;
+        min-height: 249px;
+    }
     .collapse_content{
         width: 93%;
         min-height: 126.65px;
