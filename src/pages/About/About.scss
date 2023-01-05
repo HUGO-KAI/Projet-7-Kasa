@@ -7,9 +7,13 @@
                         url(../../assets/aboutBanner.jpg);
     background-size: cover;
     border-radius: 10px;
-    @media screen and (min-width:780px) {
+    @media screen and (min-width:768px) and (max-width:1079px) {
+        width: 90%;
+    }
+    @media screen and (min-width:1080px) {
         width: 86%;
-        margin:auto auto;
+    }
+    @media screen and (min-width:768px) {
         background-image:   linear-gradient(rgba(55, 55, 56, 0.2), rgba(55, 55, 56, 0.2)),
                             url(../../assets/aboutBanner2.jpg);
     }
@@ -26,11 +30,11 @@
 .about_collapse{
     width: 90%;
     margin:20px auto;
-    @media screen and (min-width:778px) {
+    @media screen and (min-width:768px) {
         width: 71.5%;
     }
     .collapse_content__container{
-        @media screen and (min-width:778px) {
+        @media screen and (min-width:768px) {
             min-height: 20px;
             height: fit-content;
         }

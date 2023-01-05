@@ -6,10 +6,18 @@
   background-size: cover;
   border-radius: 10px;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+  .about_banner {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1080px) {
   .about_banner {
     width: 86%;
-    margin: auto auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about_banner {
     background-image: linear-gradient(rgba(55, 55, 56, 0.2), rgba(55, 55, 56, 0.2)), url(../../assets/aboutBanner2.jpg);
   }
 }
@@ -29,12 +37,12 @@
   width: 90%;
   margin: 20px auto;
 }
-@media screen and (min-width: 778px) {
+@media screen and (min-width: 768px) {
   .about_collapse {
     width: 71.5%;
   }
 }
-@media screen and (min-width: 778px) {
+@media screen and (min-width: 768px) {
   .about_collapse .collapse_content__container {
     min-height: 20px;
     height: fit-content;

@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
       margin:auto auto;
       width:100%;
       font-family: Montserrat, sans-serif;
+      box-sizing: border-box;
     }
     a{
       text-decoration: none;
