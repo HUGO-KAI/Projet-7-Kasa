@@ -7,11 +7,11 @@
     background-size: cover;
     border-radius: 10px;
     background-image: linear-gradient(rgba(55, 55, 56, 0.4), rgba(55, 55, 56, 0.4)),
-                      url("../../assets/Banner.png");
+                      url("../../assets/Banner.jpg");
     @media screen and (min-width: 1080px)  {
         width: 86%;
         background-image: linear-gradient(rgba(55, 55, 56, 0.4), rgba(55, 55, 56, 0.4)),
-                        url("../../assets/D-banner.png");
+                        url("../../assets/D-banner.jpg");
         border-radius: 25px;
     }
 }

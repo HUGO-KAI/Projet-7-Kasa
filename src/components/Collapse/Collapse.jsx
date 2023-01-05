@@ -11,7 +11,7 @@ const Collapse = ({title, content}) => {
                 <h2 className = "collapse_title">{title}</h2>
                 <div className="collapse_arrow__open"><img src={arrow} alt='arrow open'></img></div>
 			</div>
-			<div className="collapse_content__container"><h3 className="collapse_content">{content}</h3></div>	
+			<div className="collapse_content__container"><h3 className="collapse_content" id='content'>{content}</h3></div>	
 		</div>
 	) : (
 		<div onClick={() => setIsOpen(true)} className = "collapse_bar" >
