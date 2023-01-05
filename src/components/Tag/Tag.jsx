@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
-import './Tag.scss'
+import TagStyles from './Tag.module.scss'
 
 function Tag({key, tag}) {
     return (
-      <div className='tag_container'>
+      <div className={TagStyles.tag_container}>
         <p>{tag}</p>
       </div>
     )

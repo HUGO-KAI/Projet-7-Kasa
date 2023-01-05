@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import Logo from '../../assets/LOGO.png'
 
 const ContainerFooter = styled.footer`
-    
     margin-top:20px;
     width: 100%;
     height: 209px;
@@ -19,18 +18,15 @@ const ContainerFooter = styled.footer`
     div:last-child{
         font-size:12px;
         padding-top:32px;
-        
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
-        
         line-height: 142.6%;
         display: flex;
         align-items: flex-end;
         text-align: center;
         color: #FFFFFF;
         @media screen and (min-width:768px){
-           
             font-size:24px;
         }
     }

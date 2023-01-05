@@ -7,7 +7,7 @@
     margin-bottom: 20px;
 }
 @media  screen and (min-width:768px) {
-    .info-header{
+    .info_header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -101,9 +101,11 @@
         @media screen and (min-width:768px) {
            width: 45%;
         }
+        
         p{
             margin:5px 0px;
             line-height: 142.6%;
+            
         }
     }
     @media screen and (min-width:768px) {
@@ -111,9 +113,5 @@
         justify-content: space-between;
     }
 }
-.logement_collapse__content{
-    @media screen and (min-width:768px) {
-        min-height: 249px;
-    }
-}
+
 

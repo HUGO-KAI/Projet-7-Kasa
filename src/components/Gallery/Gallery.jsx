@@ -1,5 +1,5 @@
 import React from "react"
-import './Gallery.scss'
+import GalleryStyle from './Gallery.module.scss'
 import arrow from '../../assets/arrow-back.png'
 
 class Gallery extends React.Component {
@@ -18,22 +18,22 @@ class Gallery extends React.Component {
     } 
     render (){
         return (
-            <div className="Gallery">
+            <div className={GalleryStyle.Gallery}>
                 {this.props.pictures.map((picture, index) => {
                         return (
                             <React.Fragment key={index}>
                                 <img
                                     alt=""
                                     src={picture}
-                                    className={index === this.state.currentSlide ? "Gallery_img" : "hide-img"}>
+                                    className={index === this.state.currentSlide ? `${GalleryStyle.Gallery_img}` : `${GalleryStyle.hide_img}`}>
                                 </img>
                             </React.Fragment>
                         )
                 })}
-                <div className = {this.props.pictures.length === 1 ? "hide-arrow" :""}>
-                    <p className="bullet-point">{this.state.currentSlide+1}/{this.props.pictures.length}</p>
-                    <img src={arrow}  alt='précédente' onClick={() => {this.prevSlide();}} className='arrow_left'/>
-                    <img src={arrow}  alt='suivante' onClick={() => {this.nextSlide();}} className='arrow_right'/>
+                <div className = {this.props.pictures.length === 1 ? `${GalleryStyle.hide_arrow}` :""}>
+                    <p className={GalleryStyle.bullet_point}>{this.state.currentSlide+1}/{this.props.pictures.length}</p>
+                    <img src={arrow}  alt='précédente' onClick={() => {this.prevSlide();}} className={GalleryStyle.arrow_left}/>
+                    <img src={arrow}  alt='suivante' onClick={() => {this.nextSlide();}} className={GalleryStyle.arrow_right}/>
                 </div>
             </div>
         )

@@ -17,6 +17,9 @@
         right: -21.58%;
         top: 48%;
         z-index: 999;
+        &:hover{
+            cursor: pointer;
+        }
         @media screen and (min-width:768px) {
             height: 79.2px;
             width: 46.7px;
@@ -32,6 +35,9 @@
         top: 48%;
         z-index: 999;
         transform: rotate(180deg);
+        &:hover{
+            cursor: pointer;
+        }
         @media screen and (min-width:768px) {
             height: 79.2px;
             width: 46.7px;
@@ -50,13 +56,13 @@
         }
     }
 }
-.hide-img {
+.hide_img {
 	display: none;
 }
-.hide-arrow{
+.hide_arrow{
     visibility: hidden;
 }
-.bullet-point{
+.bullet_point{
     width: 100%;
     height: 32.4px;
     font-size: 18px;

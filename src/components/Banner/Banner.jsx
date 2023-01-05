@@ -1,9 +1,9 @@
 import React from "react";
-import './Banner.scss'
+import BannerStyle from './Banner.module.scss'
 
 const Banner = ({text}) => {
   return (
-    <div className="BannerContainer" >
+    <div className={BannerStyle.BannerContainer} >
       {text ? <h1>{text}</h1> : null}
     </div>
   );

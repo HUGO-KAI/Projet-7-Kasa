@@ -1,6 +1,13 @@
+.ContainerMain{
+    width:90%;
+    margin:auto auto;
+    @media screen and (min-width: 1080px)  {
+        width: 86%;
+    }
+}
 
 .about_banner{
-    width: 90%;
+    width: 100%;
     margin: auto auto;
     height:223px;
     background-image:   linear-gradient(rgba(55, 55, 56, 0.2), rgba(55, 55, 56, 0.2)),
@@ -8,10 +15,10 @@
     background-size: cover;
     border-radius: 10px;
     @media screen and (min-width:768px) and (max-width:1079px) {
-        width: 90%;
+        width: 100%;
     }
     @media screen and (min-width:1080px) {
-        width: 86%;
+        width: 100%;
     }
     @media screen and (min-width:768px) {
         background-image:   linear-gradient(rgba(55, 55, 56, 0.2), rgba(55, 55, 56, 0.2)),

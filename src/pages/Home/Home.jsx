@@ -1,19 +1,19 @@
 import Banner from "../../components/Banner/Banner"
 import Card from "../../components/Card/Card"
 import logements from "../../data/logements.json"
-import './Home.scss'
+import HomeStyles from './Home.module.scss'
 import textData from "../../data/textData";
 const slogan = textData.slogan;
 
 function Home() {
   return (
-    <main className="ContainerMain">
-      <div className="Home_banner">
+    <main className={HomeStyles.ContainerMain}>
+      <div className={HomeStyles.Home_banner}>
         <Banner text={slogan} />
       </div>
-      <section className='CardsContainer'>
+      <section className={HomeStyles.CardsContainer}>
         {logements.map((logement, index) => (
-          <div key={logement.id} className='Card_container'>
+          <div key={logement.id} className={HomeStyles.Card_container}>
             <Card
               key={`${logement.id}-${index}`}
               id = {logement.id}
