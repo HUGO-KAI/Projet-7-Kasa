@@ -1,8 +1,8 @@
 import React from "react"
-import './Slideshow.scss'
+import './Gallery.scss'
 import arrow from '../../assets/arrow-back.png'
 
-class Slideshow extends React.Component {
+class Gallery extends React.Component {
     constructor(props) {
 		super(props)
         this.state = {currentSlide: 0}
@@ -18,14 +18,14 @@ class Slideshow extends React.Component {
     } 
     render (){
         return (
-            <div className="carousel">
+            <div className="Gallery">
                 {this.props.pictures.map((picture, index) => {
                         return (
                             <React.Fragment key={index}>
                                 <img
                                     alt=""
                                     src={picture}
-                                    className={index === this.state.currentSlide ? "carrousel_img" : "hide-img"}>
+                                    className={index === this.state.currentSlide ? "Gallery_img" : "hide-img"}>
                                 </img>
                             </React.Fragment>
                         )
@@ -41,4 +41,4 @@ class Slideshow extends React.Component {
     
 }
 
-export default Slideshow
+export default Gallery

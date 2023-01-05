@@ -1,4 +1,4 @@
-.carousel {
+.Gallery {
   height: 255px;
   width: 100%;
   margin: auto;
@@ -6,11 +6,11 @@
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .carousel {
+  .Gallery {
     height: 415px;
   }
 }
-.carousel .arrow_left {
+.Gallery .arrow_left {
   height: 19.8px;
   width: 11.5px;
   border-radius: 0px;
@@ -21,13 +21,13 @@
   z-index: 999;
 }
 @media screen and (min-width: 768px) {
-  .carousel .arrow_left {
+  .Gallery .arrow_left {
     height: 79.2px;
     width: 46.7px;
     top: 40%;
   }
 }
-.carousel .arrow_right {
+.Gallery .arrow_right {
   height: 19.8px;
   width: 11.5px;
   border-radius: 0px;
@@ -38,21 +38,22 @@
   transform: rotate(180deg);
 }
 @media screen and (min-width: 768px) {
-  .carousel .arrow_right {
+  .Gallery .arrow_right {
     height: 79.2px;
     width: 46.7px;
     top: 40%;
   }
 }
-.carousel img {
+.Gallery .Gallery_img {
   border-radius: 10px;
   height: 255px;
   object-fit: cover;
+  object-position: center;
   user-select: none;
   z-index: 888;
 }
 @media screen and (min-width: 768px) {
-  .carousel img {
+  .Gallery .Gallery_img {
     height: 415px;
   }
 }
@@ -76,4 +77,4 @@
   text-align: center;
 }
 
-/*# sourceMappingURL=Slideshow.css.map */
+/*# sourceMappingURL=Gallery.css.map */

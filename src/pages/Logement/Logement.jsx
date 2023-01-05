@@ -1,7 +1,7 @@
 import React from 'react'
 import {useParams} from 'react-router-dom';
 import './Logement.scss'
-import Slideshow from '../../components/Slideshow/Slideshow'
+import Gallery from '../../components/Gallery/Gallery'
 import logements from "../../data/logements.json"
 import Tag from '../../components/Tag/Tag'
 import Rating from '../../components/Rating/Rating'
@@ -17,7 +17,7 @@ const Logement = () => {
     return (
         <main className='logement_main'>
             <div className='slide_container'>
-                <Slideshow pictures={pictures}/>
+                <Gallery pictures={pictures}/>
             </div>
             <div className='info-header'>
                 <div className='container_title'>
