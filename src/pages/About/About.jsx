@@ -10,18 +10,11 @@ const About =() => {
         <div className='about_banner'>
           <Banner />
         </div>
-        <section className='about_collapse' >
-          <Collapse title='Fiabilité' content={textData.fiability} />
-        </section>
-        <section className='about_collapse'>
-          <Collapse title='Respect' content={textData.respect} />
-        </section>
-        <section className='about_collapse'>
-          <Collapse title='Service' content={textData.service} />
-        </section>  
-        <section className='about_collapse'>
-          <Collapse title='Sécurité' content={textData.security} />
-        </section>  
+        {textData.map((text, index) => (
+           <section className='about_collapse' >
+              <Collapse title={text.title} content={text.content} />
+            </section>
+        ))}
       </main>
     )
   }

@@ -2,8 +2,7 @@ import Banner from "../../components/Banner/Banner"
 import Card from "../../components/Card/Card"
 import logements from "../../data/logements.json"
 import HomeStyles from './Home.module.scss'
-import textData from "../../data/textData";
-const slogan = textData.slogan;
+const slogan = "Chez vous, partout et ailleurs";
 
 function Home() {
   return (
