@@ -2,6 +2,7 @@ import React from "react"
 import GalleryStyle from './Gallery.module.scss'
 import arrow from '../../assets/arrow-back.png'
 
+//Retourner le composant Gallerie de photo
 class Gallery extends React.Component {
     constructor(props) {
 		super(props)

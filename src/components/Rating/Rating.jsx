@@ -4,7 +4,8 @@ import StarGray from "../../assets/starGray.svg"
 import '../../utils/colors.scss'
 import RatingStyles from "./Rating.module.scss";
 
-export default class RentalRatings extends Component {
+//Retourner le composant rating pour le logemnt
+export default class logementRatings extends Component {
 	render() {
 		const ratingScale = [1, 2, 3, 4, 5];
 		return (

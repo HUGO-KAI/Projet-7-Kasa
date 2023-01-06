@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import cardSyles from './Card.module.scss'
 import { Link } from 'react-router-dom'
 
+//Retourner la carte de logement selon la liste fournie
 function Card({ id, title, picture }) {
     return (
       <Link className={cardSyles.linkCard} to={`/logements/${id}`} >

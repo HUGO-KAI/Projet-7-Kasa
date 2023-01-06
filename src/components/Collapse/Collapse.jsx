@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './Collapse.scss'
 import arrow from '../../assets/arrow_down.png'
 
+//Retourner le component Collapse avec la fonction ouvrir/fermer
 const Collapse = ({title, content}) => {
     const [isOpen, setIsOpen] = useState(false)
 	return isOpen ? (

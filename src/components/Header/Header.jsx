@@ -2,6 +2,7 @@ import Logo from '../../assets/LOGO.png'
 import { Link } from 'react-router-dom'
 import HeaderStyles from './Header.module.scss'
 
+//Retourner le composant Header avec navbar
 function Header() {
   return (
     <header className={HeaderStyles.HeaderContainer}>

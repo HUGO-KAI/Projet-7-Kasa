@@ -35,7 +35,7 @@ const ContainerFooter = styled.footer`
         width:100%;
     }
 `
-
+//Retourner le composant Footer
 function Footer (){
     return (
             <ContainerFooter>

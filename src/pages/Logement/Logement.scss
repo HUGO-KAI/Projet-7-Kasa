@@ -5,7 +5,11 @@
     min-height: 90vh;
     margin:auto;
     margin-bottom: 20px;
+    @media  screen and (min-width:1080px) {
+        width:86%;
+    }
 }
+
 @media  screen and (min-width:768px) {
     .info_header{
         display: grid;
