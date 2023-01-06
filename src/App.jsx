@@ -20,6 +20,10 @@ const GlobalStyle = createGlobalStyle`
     a{
       text-decoration: none;
     }
+    img{
+      width:100%;
+      object-fit: cover;
+  }
 `
 
 function App() {
