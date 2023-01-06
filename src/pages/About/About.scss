@@ -40,14 +40,13 @@
     @media screen and (min-width:768px) {
         width: 83%;
     }
-    .collapse{
+    @media screen and (min-width:768px) {
         .collapse_content__container{
-            @media screen and (min-width:768px) {
                 min-height: 20px;
                 height: fit-content;
             }
         }
-    }
+    
     
 }
 
