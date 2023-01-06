@@ -36,11 +36,12 @@
 }
 .about_collapse{
     width: 100%;
-    margin:20px auto;
+    margin:19px auto;
     @media screen and (min-width:768px) {
         width: 83%;
     }
     @media screen and (min-width:768px) {
+        margin:33px auto;
         .collapse_content__container{
                 min-height: 20px;
                 height: fit-content;
