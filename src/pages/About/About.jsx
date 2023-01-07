@@ -11,7 +11,7 @@ const About =() => {
           <Banner />
         </div>
         {textData.map((text, index) => (
-           <section className='about_collapse' >
+           <section className='about_collapse' key ={index}>
               <Collapse title={text.title} content={text.content} />
             </section>
         ))}

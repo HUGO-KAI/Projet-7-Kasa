@@ -1,9 +1,9 @@
 import React from "react"
-import GalleryStyle from './Gallery.module.scss'
+import SlideshowStyle from './Slideshow.module.scss'
 import arrow from '../../assets/arrow-back.png'
 
 //Retourner le composant Gallerie de photo
-class Gallery extends React.Component {
+class Slideshow extends React.Component {
     constructor(props) {
 		super(props)
         this.state = {currentSlide: 0}
@@ -19,22 +19,22 @@ class Gallery extends React.Component {
     } 
     render (){
         return (
-            <div className={GalleryStyle.Gallery}>
+            <div className={SlideshowStyle.Gallery}>
                 {this.props.pictures.map((picture, index) => {
                         return (
                             <React.Fragment key={index}>
                                 <img
                                     alt=""
                                     src={picture}
-                                    className={index === this.state.currentSlide ? `${GalleryStyle.Gallery_img}` : `${GalleryStyle.hide_img}`}>
+                                    className={index === this.state.currentSlide ? `${SlideshowStyle.Gallery_img}` : `${SlideshowStyle.hide_img}`}>
                                 </img>
                             </React.Fragment>
                         )
                 })}
-                <div className = {this.props.pictures.length === 1 ? `${GalleryStyle.hide_arrow}` :""}>
-                    <p className={GalleryStyle.bullet_point}>{this.state.currentSlide+1}/{this.props.pictures.length}</p>
-                    <img src={arrow}  alt='précédente' onClick={() => {this.prevSlide();}} className={GalleryStyle.arrow_left}/>
-                    <img src={arrow}  alt='suivante' onClick={() => {this.nextSlide();}} className={GalleryStyle.arrow_right}/>
+                <div className = {this.props.pictures.length === 1 ? `${SlideshowStyle.hide_arrow}` :""}>
+                    <p className={SlideshowStyle.bullet_point}>{this.state.currentSlide+1}/{this.props.pictures.length}</p>
+                    <img src={arrow}  alt='précédente' onClick={() => {this.prevSlide();}} className={SlideshowStyle.arrow_left}/>
+                    <img src={arrow}  alt='suivante' onClick={() => {this.nextSlide();}} className={SlideshowStyle.arrow_right}/>
                 </div>
             </div>
         )
@@ -42,4 +42,4 @@ class Gallery extends React.Component {
     
 }
 
-export default Gallery
+export default Slideshow
