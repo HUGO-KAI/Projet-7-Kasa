@@ -33,8 +33,8 @@ class Slideshow extends React.Component {
                 })}
                 <div className = {this.props.pictures.length === 1 ? `${SlideshowStyle.hide_arrow}` :""}>
                     <p className={SlideshowStyle.bullet_point}>{this.state.currentSlide+1}/{this.props.pictures.length}</p>
-                    <img src={arrow}  alt='précédente' onClick={() => {this.prevSlide();}} className={SlideshowStyle.arrow_left}/>
-                    <img src={arrow}  alt='suivante' onClick={() => {this.nextSlide();}} className={SlideshowStyle.arrow_right}/>
+                    <img src={arrow}  title='Image précédente' alt='Précédente' onClick={() => {this.prevSlide();}} className={SlideshowStyle.arrow_left}/>
+                    <img src={arrow}  title='Image suivante' alt='Suivante' onClick={() => {this.nextSlide();}} className={SlideshowStyle.arrow_right}/>
                 </div>
             </div>
         )
