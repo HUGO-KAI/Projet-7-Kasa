@@ -44,8 +44,8 @@
             font-weight: 500;
             color:$color-primaire;
             &:hover,
-            :active{
-            border-bottom: 1px solid;
+            &:focus{
+                border-bottom: 1px solid;
             }
             @media screen and (max-width:768px) {
                 &::first-line{
