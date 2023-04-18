@@ -1,7 +1,7 @@
 import React from 'react';
 import App from './App.jsx'
 
-import { BrowserRouter, HashRouter} from 'react-router-dom';
+import { HashRouter} from 'react-router-dom';
 
 const Router = () => (
     <HashRouter>
